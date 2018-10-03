@@ -76,7 +76,7 @@ s, p = sum_and_product(5, 10)
 print(s,p)
 
 
-# In[19]:
+# In[ ]:
 
 
 empty_dict = {}
@@ -90,7 +90,32 @@ print(joels_grade)
 # In[ ]:
 
 
+joel_has_grade = "Joel" in grades
+print(joel_has_grade)
+joels_grade = grades.get("Joel",0)
+print(joels_grade)
+no_onew_grade = grades.get("No One")
+print(no_onew_grade)
+grades["Tim"] = 99
+grades["Kate"] = 100
+print(len(grades))
+print(grades)
 
+
+# In[ ]:
+
+
+tweet = {
+    "user" : "joelgrus",
+    "text" : "Data Science is Awesome",
+    "retweet_count" : 100,
+    "hashtags" : ["#data", "#science", '#datascience', 'awesome', '#yolo']
+}
+print(tweet)
+tweet_keys = tweet.keys()
+print(tweet_keys)
+print(tweet.values())
+print(tweet.items())
 
 
 # In[ ]:
